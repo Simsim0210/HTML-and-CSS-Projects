@@ -1,0 +1,131 @@
+/*NAVBAR*/
+.nav-bar {
+  position: sticky;
+  top: 0;
+    z-index: 4; /*Sets the position of the navbar in the stack layer so it is on top*/
+}
+
+ul {
+  list-style-type: none; /*Removes the default bullet point styling on list tag elements*/
+  background-color: #363636;
+  margin: -10px 10px 0px -10px; /*Margin value order top, right, bottom, left */
+  overflow: hidden; /*Hides excess margin space expanding past the browser window edge and prevents a left to right scroll bar*/
+  display: flex; /*Creates flex container so the elements will take up as much of the width that is available*/
+  align-items: center;
+}
+
+a {
+  display: block; 
+  font-family: Calibri, sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  color: white; /
+  text-decoration: none; /*Removes the default underline link text-decoration*/
+  text-transform: uppercase; /*Transform all text to uppercase regardless of the case that is typed in the HTML file*/
+  width: 100px;
+  padding: 30px;
+  text-align: center;
+  transition: background-color 0.4s ease-in;
+}
+
+/*NAVBAR ROLLOVER EFFECT*/
+a:hover{
+  background-color: rgb(248,159,0);
+  color: rgb(49, 49, 49);
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.7); 
+  transition: background-color 0.3s ease-in;
+}
+
+/*Styles and hides the anchor links within the images link div tag*/
+.rollover-menu {
+display: none;
+ position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0, 0.2);
+}
+
+/*Displays anchor elements when the user hovers their mouse over the image link*/
+.drop:hover .rollover-menu {
+  display: block;
+}
+
+/*Specifically styles the anchor elements within the div tag that contains the rollover-menu class selector*/
+.rollover-menu a {
+color: #363636;
+}
+
+/*Specifically styles the anchor elements within the div tag that contains the rollover-menu class selector when the user hovers their mouse over the anchor elements*/
+.rollover-menu a:hover{
+color: white;
+}
+
+Specifically styles the first anchor element child within the rollover-menu div tag*/
+.rollover-menu a:hover:nth-child(1) {
+  background-color: rgb(73, 49, 49);
+}
+
+/*Specifically styles the second anchor element child within the rollover-menu div tag*/
+.rollover-menu a:hover:nth-child(2) {
+background-color: rgb(87, 7, 7);
+}
+
+/Specifically styles the third anchor element child within the rollover-menu div tag*/
+.rollover-menu a:hover:nth-child(3) {
+background-color: rgb(48, 2, 2);
+}
+
+/*FOOTER*/
+footer {
+  background-color: #363636;
+  margin: 30px -10px -10px -10px; /*Margin value order top, right, bottom, left */
+  overflow: hidden; /*Hides excess margin space expanding past the browser window edge and prevents a left to right scroll bar*/
+  height: 70px;
+}
+
+/*Styles the text within the footer tag*/
+.footer-text {
+  font-family: Calibri, sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: rgb(228, 159, 0);
+  text-align: center;
+}
+
+/*IMAGES*/
+img {
+  width: 700px;
+  height: 550px;
+}
+
+/*Creates a container for each image and centers them on the page*/
+.image-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+/Creates a uniform amount pf space (as the other  two images on the screen) from the navbar to the top of the image when the bookmark link is clicked on*/
+#image3 {
+  padding-bottom: 170px;
+}
+
+/*IMAGGE 1*/
+
+/*Overlays a dark gray color over the first image*/
+.overlay {
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  background-color: rgb(90, 90, 90,);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+/*Triggers the hover effect of the overlay on image 1 with 60% opacity*/
+overlay:hover {
+  opacity: 0.6;
+}
+
+
+
+
