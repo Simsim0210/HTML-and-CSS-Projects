@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Recipes</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#recipes">Recipes</a>
+                    <div>
+                        <a href="#featured">Featured Recipes</a>
+                        <a href="#pasta">Pasta</a>
+                        <a href="#chicken">Chicken</a>
+                        <a href="#pork">Pork</a>
+                        <a href="#biscuits">Biscuits</a>
+                        <a href="#fish">Fish</a>
+                        <a href="#dessert">Dessert</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--HEADER-->
+        <header>
+            <h1>Simple Recipes</h1>
+            <p>Welcome to Simple Recipes!</p>
+        </header>
+        <!--RECIPES-->
+        <section>
+            <!--FEATURED RECIPES-->
+            <div id="featured">
+                <h2>Featured Recipes</h2>
+                <div>
+                    <img src="images/skillet-pizza.jpeg" alt="Skillet Pizza">
+                </div>
+                <div>
+                    <h3>Deep Dish Skillet Pizza</h3>
+                    <h4>Prep Time:</h4>
+                    <p>30-40 minutes</p>
+                    <h4>Level:</h4>
+                    <p>medium</p>
+                    <p>Deep dish pizza has got a lot going for it:
+a thick crust that's tender and chewy on the inside,
+but nicely crisped on the outside; a little extra room for piling
+on the toppings; and, deep dish is less needy than its thin crust
+style counterpart, which requires some care when rolling and stretching.
+Here, you just push the dough into the skillet and you're cooking.
+Save the leftovers for lunch!</p>
+<input type="button" value="Recipe">
+                </div>
+            </div>
+            <!--RECIPE CARDS -->
+            <div>
+                <h2>Recipes</h2>
+            </div>
+            <!--PASTA-->
+            <div id="pasta">
+                <img src="images/tortelloni.jpeg" alt="Tortelloni">
+                        <h3>Saucy Tortellina Parm</h3>
+                        <p>Prep Time: 30-40 minutes</p>
+                        <p>Level: medium</p>
+                        <input type="button" value="Recipe">
+                    <!--CHICKEN-->
+                    <div id="chicken">
+                        <img src="images/chicken-thighs.jpeg" alt="Mediterranean Chicken Thighs">
+                        <h3>Mediterranean Chicken Thighs</h3>
+                        <p>Prep Time: 30-40 minutes</p>
+                        <p>Level: medium</p>
+                        <input type="button" value="Recipe">
+                    </div>
+                    <!--PORK-->
+                    <div id="pork">
+                        <img src="images/pork-katsu.jpeg" alt="Pork Katsu">
+                        <h3>Crispy Pork Katsu & Rice</h3>
+                        <p>Prep Time: 30-40 minutes</p>
+                        <p>Level: medium</p>
+                        <input type="button" value="Recipe">
+                    </div>
+                    <!--BISCUITS-->
+                    <div id="biscuits">
+                        <img src="images/chedder-biscuits.jpeg" alt="Cheddar Biscuits">
+                        <h3>Cheddar Cheese Biscuits</h3>
+                        <p>Prep Time: 30-40 minutes</p>
+                        <p>Level: medium</p>
+                        <input type="button" value="Recipe">
+                    </div>
+                    <!--FISH-->
+                    <div id="fish">
+                        <img src="images/baked-cod.jpeg" alt="Baked Cod">
+                        <h3>Baked Cod & Scalloped Potatoes</h3>
+                        <p>Prep Time: 30-40 minutes</p>
+                        <p>Level: medium</p>
+                        <input type="button" value="Recipe">
+                    </div>
+                    <!--DESERT-->
+                    <div id="dessert">
+                        <img src="images/smores.jpeg" alt="S'mores">
+                        <h3>S'mores Cake</h3>
+                        <p>Prep Time: 30-40 minutes</p>
+                        <p>Level: medium</p>
+                        <input type="button" value="Recipe">
+                    </div>
+                </div>
+        </section>
+        <!--CONTACT-->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                <label for="subscribe">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <!--FOOTER-->
+        <footer>
+            <table>
+                <tr>
+                    <td>
+                        <p>&copy; 2024 Simple Recipes. All rights reserved.</p>
+                    </td>
+                    <td>
+                        <p>310 SW 4th St, Suite 100</p>
+                        <p>Portland, OR 97205</p>
+                    </td>
+                    <td>
+                        <p>Contact: (503) 555-1234</p>
+                    </td>
+                </tr>
+            </table>
