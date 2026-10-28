@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My One-Page Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My One-Page Website</h1>
+    <p>Explore beautiful images in my interactive gallery.</p>
+</header>
+
+<main>
+    <section class="gallery-section">
+        <h2>My Image Gallery</h2>
+        <p>Click any image to view a larger version.</p>
+
+        <div class="gallery">
+            <img src="images/flower.jpg" alt="A beautiful plant in a garden">
+            <img src="images/landscape.jpg" alt="A beautiful landscape plant">
+            <img src="images/nature.jpg" alt="A peaceful plant in a nature scene">
+        </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 My One-Page Website</p>
+</footer>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="close-lightbox" class="close-button" aria-label="Close image">&times;</button>
+    <img id="lightbox-image" src="" alt="">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
